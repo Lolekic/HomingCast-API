@@ -1,5 +1,6 @@
 site_name: HomingCast
-site_url: https://sitename.example
+site_url: https://lolekic.github.io/HomingCast-API/
+repo_url: https://github.com/Lolekic/HomingCast-API
 theme:
   name: material
   font:
