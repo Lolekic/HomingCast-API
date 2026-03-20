@@ -1,0 +1,2469 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://lolekic.github.io/HomingCast-API/OLD/Methods/">
+      
+      
+        <link rel="prev" href="../InfoCast/">
+      
+      
+        <link rel="next" href="../../Updates/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../Missile.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Methods - HomingCast</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#at-this-page-you-can-see-all-methods-that-are-currently-implemented" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="HomingCast" class="md-header__button md-logo" aria-label="HomingCast" data-md-component="logo">
+      
+  <img src="../../Missile.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HomingCast
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Methods
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Lolekic/HomingCast-API" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="HomingCast" class="md-nav__button md-logo" aria-label="HomingCast" data-md-component="logo">
+      
+  <img src="../../Missile.png" alt="logo">
+
+    </a>
+    HomingCast
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Lolekic/HomingCast-API" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HomingCast [Modern]
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    HomingCast [Modern]
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NEW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NEW/Methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NEW/Settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NEW/States/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    States
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NEW/Callbacks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Callbacks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NEW/Physics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Physics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NEW/Config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HomingCast [Legacy]
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    HomingCast [Legacy]
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Caster/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Caster
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CustomTrajectories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Trajectories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Physics Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Parallel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parallel Simulation [REMOVED]
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    InfoCast
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    InfoCast
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../InfoCast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    InfoCast
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methods
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#at-this-page-you-can-see-all-methods-that-are-currently-implemented" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        At this page, you can see all methods that are currently implemented
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-physics-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Non-Physics methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Non-Physics methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terminatecast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TerminateCast
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settimer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetTimer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcosmeticbullet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetCosmeticBullet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetPosition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getdirection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetDirection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setdirection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetDirection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetPosition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setrotationspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetRotationSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addrotationspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddRotationSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setmaxangletolosethetarget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetMaxAngleToLoseTheTarget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addmaxangletolosethetarget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddMaxAngleToLoseTheTarget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pause" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pause
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ispaused" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IsPaused
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pausetrajectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PauseTrajectory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumetrajectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ResumeTrajectory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ispausedtrajectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IsPausedTrajectory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getprogress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetProgress
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updateraycastparams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UpdateRaycastParams
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setxscale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetXscale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setyscale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetYscale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getdistancetotarget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetDistanceToTarget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettargetinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetTargetInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sethighprecision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetHighPrecision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settarget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetTarget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setoffset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetOffset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setoffset_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetOffset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physics-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physics methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Physics methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isphysics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IsPhysics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setmass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetMass
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addmass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddMass
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setliftpower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetLiftPower
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addliftpower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddLiftPower
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setyawpower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetYawPower
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addyawpower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddYawPower
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setdragcoefficient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetDragCoefficient
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adddragcoefficient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddDragCoefficient
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setinduceddragyaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetInducedDragYaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addinduceddragyaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddInducedDragYaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setinduceddragpitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetInducedDragPitch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addinduceddragpitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddInducedDragPitch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setthrustpower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetThrustPower
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addthrustpower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddThrustPower
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setglimit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetGLimit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addglimit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddGLimit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setpitchaoa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetPitchAoA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yawaoa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YawAoA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setadditionalforces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetAdditionalForces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addadditionalforces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddAdditionalForces
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Updates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Updates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#at-this-page-you-can-see-all-methods-that-are-currently-implemented" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        At this page, you can see all methods that are currently implemented
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-physics-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Non-Physics methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Non-Physics methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terminatecast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TerminateCast
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settimer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetTimer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcosmeticbullet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetCosmeticBullet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetPosition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getdirection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetDirection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setdirection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetDirection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetPosition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setrotationspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetRotationSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addrotationspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddRotationSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setmaxangletolosethetarget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetMaxAngleToLoseTheTarget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addmaxangletolosethetarget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddMaxAngleToLoseTheTarget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pause" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pause
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ispaused" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IsPaused
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pausetrajectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PauseTrajectory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumetrajectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ResumeTrajectory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ispausedtrajectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IsPausedTrajectory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getprogress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetProgress
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updateraycastparams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UpdateRaycastParams
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setxscale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetXscale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setyscale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetYscale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getdistancetotarget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetDistanceToTarget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettargetinfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetTargetInfo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sethighprecision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetHighPrecision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settarget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetTarget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setoffset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetOffset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setoffset_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetOffset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physics-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physics methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Physics methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isphysics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IsPhysics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setmass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetMass
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addmass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddMass
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setliftpower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetLiftPower
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addliftpower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddLiftPower
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setyawpower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetYawPower
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addyawpower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddYawPower
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setdragcoefficient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetDragCoefficient
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adddragcoefficient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddDragCoefficient
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setinduceddragyaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetInducedDragYaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addinduceddragyaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddInducedDragYaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setinduceddragpitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetInducedDragPitch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addinduceddragpitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddInducedDragPitch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setthrustpower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetThrustPower
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addthrustpower" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddThrustPower
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setglimit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetGLimit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addglimit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddGLimit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setpitchaoa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetPitchAoA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yawaoa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        YawAoA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setadditionalforces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SetAdditionalForces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addadditionalforces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AddAdditionalForces
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Methods</h1>
+
+<h2 id="at-this-page-you-can-see-all-methods-that-are-currently-implemented">At this page, you can see all methods that are currently implemented</h2>
+<div class="admonition info">
+<p class="admonition-title">Remember!</p>
+<p>These methods must be applied to <a href="../InfoCast/">InfoCast</a></p>
+</div>
+<h2 id="non-physics-methods">Non-Physics methods</h2>
+<hr />
+<h3 id="terminatecast">TerminateCast</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">TerminateCast</span><span class="p">(</span><span class="nv">customReason</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="err">?</span><span class="p">)</span>
+</span></code></pre></div>
+Terminates the cast.</p>
+<hr />
+<h3 id="settimer">SetTimer</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">SetTimer</span><span class="p">(</span><span class="nv">duration</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="nv">A</span><span class="o">..</span><span class="p">.)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">(</span><span class="nv">R</span><span class="o">..</span><span class="p">.),</span><span class="w"> </span><span class="nv">parameters</span><span class="p">:</span><span class="w"> </span><span class="py">A</span><span class="o">..</span><span class="p">.)</span>
+</span></code></pre></div>
+Sets a timer that runs the given function after the specified time.</p>
+<hr />
+<h3 id="getcosmeticbullet">GetCosmeticBullet</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">GetCosmeticBullet</span><span class="p">():</span><span class="w"> </span><span class="nv">any</span><span class="err">?</span>
+</span></code></pre></div>
+Retuns copied cosmetic bullet.</p>
+<hr />
+<h3 id="setspeed">SetSpeed</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">SetSpeed</span><span class="p">(</span><span class="nv">Speed</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nv">Vector3</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the speed of the cast.</p>
+<hr />
+<h3 id="addspeed">AddSpeed</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">AddSpeed</span><span class="p">(</span><span class="nv">Speed</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nv">Vector3</span><span class="p">)</span>
+</span></code></pre></div>
+Adds the speed to the cast.</p>
+<hr />
+<h3 id="getspeed">GetSpeed</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">GetSpeed</span><span class="p">():</span><span class="w"> </span><span class="p">(</span><span class="nv">number</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nv">Vector3</span><span class="p">)</span>
+</span></code></pre></div>
+Returns the current speed of the cast.</p>
+<hr />
+<h3 id="getposition">GetPosition</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">GetPosition</span><span class="p">():</span><span class="w"> </span><span class="nv">Vector3</span>
+</span></code></pre></div>
+Returns the current position of the cast.</p>
+<hr />
+<h3 id="getdirection">GetDirection</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">GetDirection</span><span class="p">():</span><span class="w"> </span><span class="nv">Vector3</span>
+</span></code></pre></div>
+Returns the current direction of the cast.</p>
+<hr />
+<h3 id="setdirection">SetDirection</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">SetDirection</span><span class="p">(</span><span class="nv">Direction</span><span class="p">:</span><span class="w"> </span><span class="py">Vector3</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the direction of the cast.</p>
+<hr />
+<h3 id="setposition">SetPosition</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">SetPosition</span><span class="p">(</span><span class="nv">Position</span><span class="p">:</span><span class="w"> </span><span class="py">Vector3</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the position of the cast.</p>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">Remember!</p>
+<p>Angles must not be in radians.</p>
+</div>
+<hr />
+<h3 id="setrotationspeed">SetRotationSpeed</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">SetRotationSpeed</span><span class="p">(</span><span class="nv">Number</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the speed of rotation of the cast.</p>
+<hr />
+<h3 id="addrotationspeed">AddRotationSpeed</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">AddRotationSpeed</span><span class="p">(</span><span class="nv">Number</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Adds the speed of rotation to the cast.</p>
+<hr />
+<h3 id="setmaxangletolosethetarget">SetMaxAngleToLoseTheTarget</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">SetMaxAngleToLoseTheTarget</span><span class="p">(</span><span class="nv">Angle</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the angle at which the cast loses its target.</p>
+<hr />
+<h3 id="addmaxangletolosethetarget">AddMaxAngleToLoseTheTarget</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">AddMaxAngleToLoseTheTarget</span><span class="p">(</span><span class="nv">Angle</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Adds to the angle at which the cast loses its target.</p>
+<hr />
+<h3 id="pause">Pause</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">Pause</span><span class="p">()</span>
+</span></code></pre></div>
+Pauses the simulation of the cast.</p>
+<hr />
+<h3 id="resume">Resume</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">Resume</span><span class="p">()</span>
+</span></code></pre></div>
+Resumes the simulation of the cast.</p>
+<hr />
+<h3 id="ispaused">IsPaused</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">IsPaused</span><span class="p">():</span><span class="w"> </span><span class="nv">boolean</span>
+</span></code></pre></div>
+Returns <code>true</code> if the cast is paused, otherwise <code>false</code>.</p>
+<hr />
+<h3 id="pausetrajectory">PauseTrajectory</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">PauseTrajectory</span><span class="p">()</span>
+</span></code></pre></div>
+Pauses the trajectory from advancing.</p>
+<hr />
+<h3 id="resumetrajectory">ResumeTrajectory</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">ResumeTrajectory</span><span class="p">()</span>
+</span></code></pre></div>
+Resumes the trajectory.</p>
+<hr />
+<h3 id="ispausedtrajectory">IsPausedTrajectory</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">IsPausedTrajectory</span><span class="p">():</span><span class="w"> </span><span class="nv">boolean</span>
+</span></code></pre></div>
+Returns <code>true</code> if the trajectory is paused, otherwise <code>false</code>.</p>
+<hr />
+<h3 id="getprogress">GetProgress</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">GetProgress</span><span class="p">():</span><span class="w"> </span><span class="p">(</span><span class="nv">number</span><span class="p">,</span><span class="w"> </span><span class="nv">number</span><span class="p">,</span><span class="w"> </span><span class="nv">number</span><span class="err">?</span><span class="p">,</span><span class="w"> </span><span class="nv">number</span><span class="err">?</span><span class="p">)</span>
+</span></code></pre></div>
+Returns the current covered distance and total flight time. If the covered distance is greater than or equal to <code>0</code>, it also returns the percentage of how far the cast has traveled. The same applies to the total flight time.</p>
+<hr />
+<h3 id="updateraycastparams">UpdateRaycastParams</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">UpdateRaycastParams</span><span class="p">(</span><span class="nv">Params</span><span class="p">:</span><span class="w"> </span><span class="py">RaycastParams</span><span class="p">)</span>
+</span></code></pre></div>
+Sets new raycast parameters for the cast.</p>
+<hr />
+<h3 id="setxscale">SetXscale</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">SetXscale</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">value</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the X scale of a trajectory point to a given value (from <code>0</code> to <code>1</code>). The <code>index</code> determines the position in the trajectory list.</p>
+<hr />
+<h3 id="setyscale">SetYscale</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">SetYscale</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">value</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the Y scale of a trajectory point to a given value (from <code>-1</code> to <code>1</code>). The <code>index</code> determines the position in the trajectory list.</p>
+<hr />
+<h3 id="getdistancetotarget">GetDistanceToTarget</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">GetDistanceToTarget</span><span class="p">():</span><span class="w"> </span><span class="nv">number</span><span class="err">?</span>
+</span></code></pre></div>
+Returns the distance to the target if the target is not <code>nil</code>, otherwise returns <code>nil</code>.</p>
+<hr />
+<h3 id="gettargetinfo">GetTargetInfo</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">GetTargetInfo</span><span class="p">():</span><span class="w"> </span><span class="p">(</span><span class="nv">Vector3</span><span class="err">?</span><span class="p">,</span><span class="w"> </span><span class="nv">Vector3</span><span class="err">?</span><span class="p">)</span>
+</span></code></pre></div>
+Returns the position and velocity of the target. If the target is a <code>Vector3</code>, it only returns the position. If the target is <code>nil</code>, both return values will be <code>nil</code>.</p>
+<hr />
+<h3 id="sethighprecision">SetHighPrecision</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">SetHighPrecision</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the high precision mode to the given value.</p>
+<hr />
+<h3 id="settarget">SetTarget</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">SetTarget</span><span class="p">(</span><span class="nv">Target</span><span class="p">:</span><span class="w"> </span><span class="py">Vector3</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nv">BasePart</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nv">Model</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">nil</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the target to the given value.</p>
+<div class="admonition info">
+<p class="admonition-title">Remember!</p>
+<p>The <code>Model</code> must have its primary part set; otherwise, an error will occur!</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Beware!</p>
+<p>Setting a new target too frequently can lead to unexpected behaviors!</p>
+</div>
+<hr />
+<hr />
+<h3 id="setoffset">SetOffset</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">SetOffset</span><span class="p">(</span><span class="nv">func</span><span class="p">:</span><span class="w"> </span><span class="err">(</span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Vector3</span><span class="p">,</span><span class="w"> </span><span class="nv">Vector3</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">(</span><span class="nv">Vector3</span><span class="p">))</span>
+</span></code></pre></div>
+Sets the new <code>Offset</code> function.</p>
+<hr />
+<h3 id="setoffset_1">SetOffset</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="nv">InfoCast</span><span class="p">:</span><span class="nf">SetScaler</span><span class="p">(</span><span class="nv">func</span><span class="p">:</span><span class="w"> </span><span class="err">(</span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Vector3</span><span class="p">,</span><span class="w"> </span><span class="nv">Vector3</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">(</span><span class="nv">Vector3</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nv">number</span><span class="p">))</span>
+</span></code></pre></div>
+Sets the new <code>Scaler</code> function.</p>
+<h2 id="physics-methods">Physics methods</h2>
+<h3 id="isphysics">IsPhysics</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">IsPhysics</span><span class="p">():</span><span class="w"> </span><span class="nv">boolean</span>
+</span></code></pre></div>
+Returns whether projectile has physics</p>
+<h3 id="setmass">SetMass</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">SetMass</span><span class="p">(</span><span class="nv">Mass</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the mass used for the physics simulation</p>
+<hr />
+<h3 id="addmass">AddMass</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">AddMass</span><span class="p">(</span><span class="nv">Mass</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Adds to the mass used for the physics simulation</p>
+<hr />
+<h3 id="setliftpower">SetLiftPower</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">SetLiftPower</span><span class="p">(</span><span class="nv">LiftPower</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the lift power used for the physics simulation</p>
+<hr />
+<h3 id="addliftpower">AddLiftPower</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">AddLiftPower</span><span class="p">(</span><span class="nv">LiftPower</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Adds to the lift power used for the physics simulation</p>
+<hr />
+<h3 id="setyawpower">SetYawPower</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">SetYawPower</span><span class="p">(</span><span class="nv">YawPower</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the yaw power used for the physics simulation</p>
+<hr />
+<h3 id="addyawpower">AddYawPower</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">AddYawPower</span><span class="p">(</span><span class="nv">YawPower</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Adds to the yaw power used for the physics simulation</p>
+<hr />
+<h3 id="setdragcoefficient">SetDragCoefficient</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">SetDragCoefficient</span><span class="p">(</span><span class="nv">DragCoefficient</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the drag coefficient used for the physics simulation</p>
+<hr />
+<h3 id="adddragcoefficient">AddDragCoefficient</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">AddDragCoefficient</span><span class="p">(</span><span class="nv">DragCoefficient</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Adds to the drag coefficient used for the physics simulation</p>
+<hr />
+<h3 id="setinduceddragyaw">SetInducedDragYaw</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">SetInducedDragYaw</span><span class="p">(</span><span class="nv">InducedDragYaw</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the yaw-induced drag value used for the physics simulation</p>
+<hr />
+<h3 id="addinduceddragyaw">AddInducedDragYaw</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">AddInducedDragYaw</span><span class="p">(</span><span class="nv">InducedDragYaw</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Adds to the yaw-induced drag value used for the physics simulation</p>
+<hr />
+<h3 id="setinduceddragpitch">SetInducedDragPitch</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">SetInducedDragPitch</span><span class="p">(</span><span class="nv">InducedDragPitch</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the pitch-induced drag value used for the physics simulation</p>
+<hr />
+<h3 id="addinduceddragpitch">AddInducedDragPitch</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">AddInducedDragPitch</span><span class="p">(</span><span class="nv">InducedDragPitch</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Adds to the pitch-induced drag value used for the physics simulation</p>
+<hr />
+<h3 id="setthrustpower">SetThrustPower</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">SetThrustPower</span><span class="p">(</span><span class="nv">ThrustPower</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the thrust power used for the physics simulation</p>
+<hr />
+<h3 id="addthrustpower">AddThrustPower</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">AddThrustPower</span><span class="p">(</span><span class="nv">ThrustPower</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Adds to the thrust power used for the physics simulation</p>
+<hr />
+<h3 id="setglimit">SetGLimit</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">SetGLimit</span><span class="p">(</span><span class="nv">G_Limit</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the G limit used for the physics simulation</p>
+<hr />
+<h3 id="addglimit">AddGLimit</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">AddGLimit</span><span class="p">(</span><span class="nv">MaxAngle</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span>
+</span></code></pre></div>
+Adds to the G limit used for the physics simulation</p>
+<hr />
+<h3 id="setpitchaoa">SetPitchAoA</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">SetPitchAoA</span><span class="p">(</span><span class="nv">PitchAoA</span><span class="p">:</span><span class="w"> </span><span class="err">{})</span>
+</span></code></pre></div>
+Sets the angle of attack curve for pitch in the physics simulation</p>
+<hr />
+<h3 id="yawaoa">YawAoA</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">YawAoA</span><span class="p">(</span><span class="nv">YawAoA</span><span class="p">:</span><span class="w"> </span><span class="err">{})</span>
+</span></code></pre></div>
+Sets the angle of attack curve for yaw in the physics simulation</p>
+<hr />
+<h3 id="setadditionalforces">SetAdditionalForces</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">SetAdditionalForces</span><span class="p">(</span><span class="nv">Force</span><span class="p">:</span><span class="w"> </span><span class="py">Vector3</span><span class="p">)</span>
+</span></code></pre></div>
+Sets the additional forces applied to the physics simulation</p>
+<hr />
+<h3 id="addadditionalforces">AddAdditionalForces</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="nv">Simulation</span><span class="p">:</span><span class="nf">AddAdditionalForces</span><span class="p">(</span><span class="nv">Force</span><span class="p">:</span><span class="w"> </span><span class="py">Vector3</span><span class="p">)</span>
+</span></code></pre></div>
+Adds to the additional forces applied to the physics simulation</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

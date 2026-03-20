@@ -1,0 +1,1490 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://lolekic.github.io/HomingCast-API/OLD/Properties/">
+      
+      
+        <link rel="prev" href="../Caster/">
+      
+      
+        <link rel="next" href="../CustomTrajectories/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../Missile.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Properties - HomingCast</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#there-are-a-lot-of-properties-and-they-all-are-listed-here" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="HomingCast" class="md-header__button md-logo" aria-label="HomingCast" data-md-component="logo">
+      
+  <img src="../../Missile.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HomingCast
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Properties
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Lolekic/HomingCast-API" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="HomingCast" class="md-nav__button md-logo" aria-label="HomingCast" data-md-component="logo">
+      
+  <img src="../../Missile.png" alt="logo">
+
+    </a>
+    HomingCast
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Lolekic/HomingCast-API" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HomingCast [Modern]
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    HomingCast [Modern]
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NEW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NEW/Methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NEW/Settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NEW/States/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    States
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NEW/Callbacks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Callbacks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NEW/Physics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Physics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NEW/Config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HomingCast [Legacy]
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    HomingCast [Legacy]
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Caster/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Caster
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#there-are-a-lot-of-properties-and-they-all-are-listed-here" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        There are a lot of properties and they all are listed here!
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="There are a lot of properties and they all are listed here!">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maxdistance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MaxDistance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maxflytime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MaxFlyTime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotationspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RotationSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rayspermove" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RaysPerMove
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maxangletolosethetarget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MaxAngleToLoseTheTarget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simulatebeforephysics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SimulateBeforePhysics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raycastparams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RayCastParams
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cosmeticbulletfolder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CosmeticBulletFolder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cosmeticbullettemplate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CosmeticBulletTemplate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prediction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trajectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trajectory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highprecision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HighPrecision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Offset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scaler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scaler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userdata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UserData
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CustomTrajectories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom Trajectories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Physics Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Parallel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parallel Simulation [REMOVED]
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    InfoCast
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    InfoCast
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../InfoCast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    InfoCast
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Updates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Updates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#there-are-a-lot-of-properties-and-they-all-are-listed-here" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        There are a lot of properties and they all are listed here!
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="There are a lot of properties and they all are listed here!">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maxdistance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MaxDistance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maxflytime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MaxFlyTime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotationspeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RotationSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rayspermove" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RaysPerMove
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maxangletolosethetarget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MaxAngleToLoseTheTarget
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simulatebeforephysics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SimulateBeforePhysics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raycastparams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RayCastParams
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cosmeticbulletfolder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CosmeticBulletFolder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cosmeticbullettemplate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CosmeticBulletTemplate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prediction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trajectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trajectory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highprecision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HighPrecision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Offset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scaler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scaler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userdata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UserData
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Properties</h1>
+
+<p>To access properties, you first need to require the module:</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">HomingCast</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(...</span><span class="o">/</span><span class="nv">HomingCast</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Then, create the properties:</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">Properties</span><span class="p">:</span><span class="w"> </span><span class="err">{}</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="py">HomingCast</span><span class="p">.</span><span class="nf">NewProperties</span><span class="p">()</span>
+</span></code></pre></div>
+<div class="admonition question">
+<p class="admonition-title">Can I create more <code>Properties</code>?</p>
+<p>Yes, you can! This can be useful for different scenarios. For example, if your spell hits something and creates sub-spells, you can create additional properties to give them different behaviors</p>
+</div>
+<h2 id="there-are-a-lot-of-properties-and-they-all-are-listed-here">There are a lot of properties and they all are listed here!</h2>
+<hr />
+<h3 id="maxdistance">MaxDistance</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">MaxDistance</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="py">number</span>
+</span></code></pre></div>
+If the cast covers this distance, it will be terminated</p>
+<div class="admonition info">
+<p class="admonition-title">Terminated!</p>
+<p>This will fire:
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">Caster</span><span class="p">.</span><span class="nf">Terminated</span><span class="p">(</span><span class="nv">InfoCast</span><span class="p">,</span><span class="w"> </span><span class="nv">Reason</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="p">,</span><span class="w"> </span><span class="nv">CosmeticBullet</span><span class="p">:</span><span class="w"> </span><span class="py">BasePart</span><span class="err">?</span><span class="p">,</span><span class="w"> </span><span class="nv">UserData</span><span class="p">:</span><span class="w"> </span><span class="err">{})</span>
+</span></code></pre></div>
+The <code>Reason</code> will be <code>"MaxDistance"</code></p>
+</div>
+<hr />
+<h3 id="maxflytime">MaxFlyTime</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">MaxFlyTime</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="py">number</span>
+</span></code></pre></div>
+If the cast flies longer than this value, it will be terminated</p>
+<div class="admonition info">
+<p class="admonition-title">Terminated!</p>
+<p>This will fire:
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">Caster</span><span class="p">.</span><span class="nf">Terminated</span><span class="p">(</span><span class="nv">InfoCast</span><span class="p">,</span><span class="w"> </span><span class="nv">Reason</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="p">,</span><span class="w"> </span><span class="nv">CosmeticBullet</span><span class="p">:</span><span class="w"> </span><span class="py">BasePart</span><span class="err">?</span><span class="p">,</span><span class="w"> </span><span class="nv">UserData</span><span class="p">:</span><span class="w"> </span><span class="err">{})</span>
+</span></code></pre></div>
+The <code>Reason</code> will be <code>"MaxFlyTime"</code></p>
+</div>
+<hr />
+<h3 id="rotationspeed">RotationSpeed</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">RotationSpeed</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="py">number</span>
+</span></code></pre></div>
+Defines the speed at which the cast turns</p>
+<hr />
+<h3 id="rayspermove">RaysPerMove</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">RaysPerMove</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="py">number</span>
+</span></code></pre></div>
+Determines how many raycasts will be fired in one move.</p>
+<div class="admonition danger">
+<p class="admonition-title">Performance Warning!</p>
+<p>Setting this value too high (e.g., 20 or more) can cause significant lag</p>
+<p>Recommended values range from <strong>1 to 5</strong></p>
+</div>
+<hr />
+<h3 id="maxangletolosethetarget">MaxAngleToLoseTheTarget</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">MaxAngleToLoseTheTarget</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="py">number</span>
+</span></code></pre></div>
+If the target moves outside this angle, the cast will lose track of it</p>
+<hr />
+<h3 id="simulatebeforephysics">SimulateBeforePhysics</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">SimulateBeforePhysics</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="py">boolean</span>
+</span></code></pre></div>
+If <code>true</code>, the projectile will be simulated before physics calculations (Optional)</p>
+<hr />
+<h3 id="raycastparams">RayCastParams</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">RayCastParams</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="py">RaycastParams</span>
+</span></code></pre></div>
+Defines the <code>RaycastParams</code> for the cast (Optional)</p>
+<hr />
+<h3 id="cosmeticbulletfolder">CosmeticBulletFolder</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">CosmeticBulletFolder</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="py">any</span><span class="err">?</span>
+</span></code></pre></div>
+The folder used to contain cosmetic bullets</p>
+<hr />
+<h3 id="cosmeticbullettemplate">CosmeticBulletTemplate</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">CosmeticBulletTemplate</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="py">any</span><span class="err">?</span>
+</span></code></pre></div>
+The cosmetic bullet itself</p>
+<hr />
+<h3 id="prediction">Prediction</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">Prediction</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="py">boolean</span>
+</span></code></pre></div>
+If <code>false</code>, target prediction is disabled. If <code>true</code> then module will predict the target's future position based on its velocity and position</p>
+<hr />
+<h3 id="trajectory">Trajectory</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">Trajectory</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="err">{}?</span>
+</span></code></pre></div>
+If not <code>nil</code>, the projectile will attempt to follow the given trajectory. (Optional)</p>
+<p>For more information, see <a href="../CustomTrajectories/">Custom Trajectories</a>.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">Trajectory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span><span class="p">{</span><span class="nv">Yscale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.3</span><span class="p">,</span><span class="w"> </span><span class="nv">Xscale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.12220414727926254</span><span class="p">,</span><span class="w"> </span><span class="nv">State</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Free&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">MaxHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">150</span><span class="p">},</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">    </span><span class="p">{</span><span class="nv">Yscale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.6</span><span class="p">,</span><span class="w"> </span><span class="nv">Xscale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.310281366109848</span><span class="p">,</span><span class="w"> </span><span class="nv">State</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Free&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">MaxHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">150</span><span class="p">},</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">    </span><span class="p">{</span><span class="nv">Yscale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.6</span><span class="p">,</span><span class="w"> </span><span class="nv">Xscale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.903989744186401</span><span class="p">,</span><span class="w"> </span><span class="nv">State</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Free&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">CheckPoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Above&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">MaxHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">150</span><span class="p">},</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<hr />
+<h3 id="highprecision">HighPrecision</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">HighPrecision</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="py">number</span>
+</span></code></pre></div>
+If this value is greater than <code>0</code> (e.g., <code>0.1, 0.2, 0.3, ..., 1</code>), the module will perform a secondary accuracy check after a low-fidelity raycast detects a hit. This value determines how precise the recalculations will be. (Optional)</p>
+<p><img _="," alt="HighPrecision Example" height="300" src="../HighPrecisionExample.png" width="600" /></p>
+<div class="admonition danger">
+<p class="admonition-title">Performance Warning!</p>
+<p>Setting this value to extreme small numbers (e.g., <code>0.01</code> or smaller) can cause significant lag</p>
+<p>Recommended values range from <strong>0.1</strong></p>
+</div>
+<hr />
+<h3 id="offset">Offset</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">Offset</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="err">((</span><span class="py">TotalTime</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">DeltaTime</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">TargetPosition</span><span class="p">:</span><span class="w"> </span><span class="py">Vector3</span><span class="p">,</span><span class="w"> </span><span class="nv">CurrentPosition</span><span class="p">:</span><span class="w"> </span><span class="py">Vector3</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">(</span><span class="nv">Vector3</span><span class="p">))</span><span class="err">?</span>
+</span></code></pre></div>
+This function affects the target's position</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">Offset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="nv">TotalTime</span><span class="p">,</span><span class="w"> </span><span class="nv">DeltaTime</span><span class="p">,</span><span class="w"> </span><span class="nv">TargetPosition</span><span class="p">,</span><span class="w"> </span><span class="nv">CurrentPosition</span><span class="p">)</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">    </span><span class="kr">return</span><span class="w"> </span><span class="nv">Vector3</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="kr">end</span>
+</span></code></pre></div>
+The projectile will fly above the target's actual position</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">How does <strong>Offset</strong> work?</p>
+<div class="language-luau highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nv">TargetPosition</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nf">Offset</span><span class="p">(</span><span class="nv">TotalTime</span><span class="p">,</span><span class="w"> </span><span class="nv">DeltaTime</span><span class="p">,</span><span class="w"> </span><span class="nv">TargetPosition</span><span class="p">,</span><span class="w"> </span><span class="nv">CurrentPosition</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<hr />
+<h3 id="scaler">Scaler</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">Scaler</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="err">((</span><span class="py">TotalTime</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">DeltaTime</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">TargetPosition</span><span class="p">:</span><span class="w"> </span><span class="py">Vector3</span><span class="p">,</span><span class="w"> </span><span class="nv">CurrentPosition</span><span class="p">:</span><span class="w"> </span><span class="py">Vector3</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">(</span><span class="nv">Vector3</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nv">number</span><span class="p">))</span><span class="err">?</span>
+</span></code></pre></div>
+This function affects the target's position</p>
+<div class="admonition info">
+<p class="admonition-title">How does <strong>Scaler</strong> work?</p>
+<div class="language-luau highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="nv">TargetPosition</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="nf">Scaler</span><span class="p">(</span><span class="nv">TotalTime</span><span class="p">,</span><span class="w"> </span><span class="nv">DeltaTime</span><span class="p">,</span><span class="w"> </span><span class="nv">TargetPosition</span><span class="p">,</span><span class="w"> </span><span class="nv">CurrentPosition</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Remember!</p>
+<p>First, the target's position will be scaled, and then an offset will be applied
+<div class="language-luau highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nv">TargetPosition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">TargetPosition</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nf">Scaler</span><span class="p">(...)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">Offset</span><span class="p">(...)</span>
+</span></code></pre></div></p>
+</div>
+<hr />
+<h3 id="userdata">UserData</h3>
+<p><div class="language-lua highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="nv">Properties</span><span class="p">.</span><span class="py">UserData</span><span class="w"> </span><span class="p">::</span><span class="w"> </span><span class="err">{[</span><span class="py">any</span><span class="p">]:</span><span class="w"> </span><span class="nv">any</span><span class="p">}</span>
+</span></code></pre></div>
+Stores custom data</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
